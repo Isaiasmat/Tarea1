@@ -1,6 +1,7 @@
 public class Ejercicios
 {
 	//deveulve true si "numero" es par y false de lo contrario
+	//con esfuerzo acordandome de lo basico
 	static boolean esPar(int numero)
 	{
 		if (numero%2==0)
@@ -14,6 +15,7 @@ public class Ejercicios
 	//devuelve "paquetote" si lempiras es menor que 200
 	//de lo contrario devuelve paqueton
 	//nota: solo aceptan minusculas
+	//explicado en clase
 	static String churches(int lempiras)
 	{
 		if(lempiras<50)
@@ -27,6 +29,7 @@ public class Ejercicios
 	
 	//devuelve el factorial de "num"
 	//Inspiration http://puntocomnoesunlenguaje.blogspot.com/2012/04/recursividad-en-java.html
+	//Apoyado por companero de clase
 	static int factorial(int num)
 	{
 		int factorial=1;
@@ -73,15 +76,18 @@ public class Ejercicios
 	
 	//devuelve la funcion fibonacci de "num"
 	//nota: puedes consultar la funcion en http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
+	//Inspirado por http://stackoverflow.com/questions/8965006/java-recursive-fibonacci-sequence
 	static int fibonacci(int num)
 	{
-		if (num == 0){
+		if (num == 0)
 			
-			return 1;
-		}
+			return 0;
+			
+		else if(num == 1)
+		return 1;
 		
 		else
-		n 1;
+			return fibonacci(num -1) + fibonacci(num - 2);
 		
 	}
 	
